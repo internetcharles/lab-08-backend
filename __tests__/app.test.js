@@ -46,6 +46,22 @@ describe('app routes', () => {
         meal: 'dinner',
         price: 15,
         delicious: true
+      },
+      {
+        id: 4,
+        name: 'cheese',
+        ingredients: 'mozzarella, tomatoes',
+        meal: 'dinner',
+        price: 15,
+        delicious: true
+      },
+      {
+        id: 5,
+        name: 'sausage',
+        ingredients: 'mozzarella, tomatoes, sausage',
+        meal: 'dinner',
+        price: 15,
+        delicious: true
       }
     ];
 
