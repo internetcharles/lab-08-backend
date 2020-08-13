@@ -20,31 +20,37 @@ describe('app routes', () => {
     return client.end(done);
   });
 
-  test('returns animals', async() => {
+  test('returns pizzas', async() => {
 
     const expectation = [
       {
-        'id': 1,
-        'name': 'bessie',
-        'coolfactor': 3,
-        'owner_id': 1
+        id: 1,
+        name: 'chocolate',
+        ingredients: 'chocolate, gluttony',
+        meal: 'dessert',
+        price: 0,
+        delicious: false
       },
       {
-        'id': 2,
-        'name': 'jumpy',
-        'coolfactor': 4,
-        'owner_id': 1
+        id: 2,
+        name: 'neapolitan',
+        ingredients: 'tomatoes, mozzarella',
+        meal: 'dinner',
+        price: 10,
+        delicious: true
       },
       {
-        'id': 3,
-        'name': 'spot',
-        'coolfactor': 10,
-        'owner_id': 1
+        id: 3,
+        name: 'pepperoni',
+        ingredients: 'pepperoni, mozzarella, tomatoes',
+        meal: 'dinner',
+        price: 15,
+        delicious: true
       }
     ];
 
     const data = await fakeRequest(app)
-      .get('/animals')
+      .get('/pizzas')
       .expect('Content-Type', /json/)
       .expect(200);
 
