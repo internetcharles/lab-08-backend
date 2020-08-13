@@ -19,5 +19,19 @@ module.exports = [
     meal: 'dinner',
     price: 15,
     delicious: true
+  },
+  {
+    name: 'cheese',
+    ingredients: 'mozzarella, tomatoes',
+    meal: 'dinner',
+    price: 15,
+    delicious: true
+  },
+  {
+    name: 'sausage',
+    ingredients: 'mozzarella, tomatoes, sausage',
+    meal: 'dinner',
+    price: 15,
+    delicious: true
   }
 ];
