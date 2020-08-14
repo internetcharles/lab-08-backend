@@ -10,5 +10,5 @@ module.exports = [
 },
 {
     origin: 'Middle Earth'
-}
+},
 ]
