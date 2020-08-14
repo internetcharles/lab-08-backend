@@ -17,13 +17,18 @@ async function run() {
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
             );     
+                  CREATE TABLE origin (
+                    id SERIAL PRIMARY KEY NOT NULL,
+                    origin VARCHAR(512) NOT NULL
+            );     
                 CREATE TABLE pizzas (
                     id SERIAL PRIMARY KEY NOT NULL,
                     name VARCHAR(512) NOT NULL,
                     ingredients VARCHAR(512) NOT NULL,
                     meal VARCHAR(512) NOT NULL,
                     price INTEGER NOT NULL,
-                    delicious BOOLEAN NOT NULL
+                    delicious BOOLEAN NOT NULL,
+                    origin_id INTEGER NOT NULL REFERENCES origin(id)
             );
         `);
 
