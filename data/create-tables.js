@@ -28,7 +28,7 @@ async function run() {
                     meal VARCHAR(512) NOT NULL,
                     price INTEGER NOT NULL,
                     delicious BOOLEAN NOT NULL,
-                    origin_id INTEGER NOT NULL REFERENCES origin(id)
+                    origin_id VARCHAR(512) NOT NULL REFERENCES origin(id)
             );
         `);
 
